@@ -5,7 +5,7 @@
 | 用途 | URL |
 |------|-----|
 | **名刺・初対面（簡潔）** | https://lit.link/shinjiseanogo |
-| **このアーカイブ（詳細）** | GitHub Pages（リポジトリ作成後に URL を追記） |
+| **このアーカイブ（詳細）** | https://seanogo.github.io/shinjiseanogo-archive/ |
 
 ## 方針
 
