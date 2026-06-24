@@ -52,6 +52,24 @@ a:hover {
   border-radius: 50%;
   border: 4px solid var(--hn-orange);
   background: #fff;
+  object-fit: cover;
+}
+
+.hero__portrait {
+  position: relative;
+  display: inline-block;
+}
+
+.hero__badge {
+  position: absolute;
+  right: -6px;
+  bottom: -2px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 .hero h1 {
@@ -197,6 +215,56 @@ section h3 {
   color: #546e7a;
 }
 
+.figure {
+  margin: 1.25rem 0 0;
+}
+
+.figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.figure--wide img {
+  max-width: 100%;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.gallery__item {
+  margin: 0;
+}
+
+.gallery__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  display: block;
+  background: #fafafa;
+}
+
+.gallery__item figcaption {
+  margin-top: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.4;
+}
+
 footer {
   text-align: center;
   font-size: 0.82rem;
@@ -207,5 +275,9 @@ footer {
 @media (min-width: 600px) {
   .link-grid--two {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
