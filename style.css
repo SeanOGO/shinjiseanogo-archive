@@ -288,7 +288,21 @@ section h3 {
 }
 
 .gallery__item {
+  display: block;
   margin: 0;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.gallery__item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.gallery__item:hover .gallery__caption {
+  color: var(--hn-orange);
 }
 
 .gallery__item img {
@@ -300,7 +314,8 @@ section h3 {
   background: #fafafa;
 }
 
-.gallery__item figcaption {
+.gallery__caption {
+  display: block;
   margin-top: 0.35rem;
   font-size: 0.78rem;
   color: var(--muted);
