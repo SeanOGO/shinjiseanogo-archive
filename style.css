@@ -170,8 +170,51 @@ section h3 {
 .link-grid li {
   border: 1px solid var(--border);
   border-radius: 10px;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.link-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
   padding: 0.75rem 1rem;
+  text-decoration: none;
+  color: inherit;
+  min-height: 100%;
+  transition: background 0.15s ease;
+}
+
+.link-card:hover {
+  background: #fff8ee;
+}
+
+.link-card:hover .link-card__url {
+  color: var(--hn-orange);
+}
+
+.link-card__icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 1px solid var(--border);
   background: #fafafa;
+}
+
+.link-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.link-card__url {
+  display: block;
+  font-size: 0.82rem;
+  color: #1565c0;
+  word-break: break-all;
+  margin-top: 0.2rem;
 }
 
 .link-grid .title {
@@ -183,7 +226,7 @@ section h3 {
 .link-grid .desc {
   font-size: 0.88rem;
   color: var(--muted);
-  margin: 0 0 0.35rem;
+  margin: 0;
 }
 
 .timeline {
